@@ -48,8 +48,9 @@ def run(**kwargs):
 
 if __name__ == '__main__':
 
-    gpu = tf.config.experimental.list_physical_devices('GPU')
-    tf.config.experimental.set_memory_growth(gpu[0], True)
+    # seems that linking correct cudnn7.6.4 solves this issue...
+    # gpu = tf.config.experimental.list_physical_devices('GPU')
+    # tf.config.experimental.set_memory_growth(gpu[0], True)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_model_dir',
