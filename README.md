@@ -3,7 +3,8 @@
 ## Test 1
 
 - Model is trained in Jupyter notebook: `Test1.ipynb`.
-    - MSE after 50 epochs: **train - 0.1889, val - 0.1067. Validation split: 0.2.** 
+    - MSE after 50 epochs: **train 0.1889, val 0.1067. Validation split: 0.2.**
+        - Validaton error during several last epochs is somewhere between: *0.07-0.17*
     - Preprocessing: X* data is scaled using StandardScaler from `sklearn` library 
 - Predicted values are saved in `test_pred.csv` file.
 
